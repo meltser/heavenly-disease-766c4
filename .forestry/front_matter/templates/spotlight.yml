@@ -1,0 +1,34 @@
+---
+label: Spotlight Section
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: section_id
+    label: Element ID
+  - type: text
+    name: title
+    label: Section Title
+    description: >-
+      The section title (Used by the CMS, even if it is not displayed in the
+      section)
+    default: Spotlight Section
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: The background style of the section
+    config:
+      required: true
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    default: spotlight.html
+    config:
+      required: true
